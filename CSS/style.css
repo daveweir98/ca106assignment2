@@ -1,0 +1,189 @@
+/* general stuff */
+body{
+	margin: 0;
+	background-color: #ffffcc;
+}
+
+h1{
+	font-family: Verdana;
+	text-align: center;
+}
+
+h2{
+	padding: 2.5%;
+	font-family: Verdana;
+	text-align: center;
+}
+
+p{
+	padding-right: 20%;
+	padding-left: 20%;
+	padding-bottom: 2.5%;
+	font-size: 20px;
+}
+
+body ul li{
+	font-size: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+body ol li{
+	font-size: 20px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+
+/* navbar stuff */
+.navbar ul li{
+	display: inline;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	margin: 0;
+	font-size: 28px;
+	font-family: Arial;
+}
+
+.nav-img{
+	height: 70px;
+	width: 85px;
+}
+
+.navbar{
+	background-color: #cc0000;
+	margin: 0;
+	padding: 1%;
+	border-bottom-right-radius: 15%;
+	border-bottom-left-radius: 15%;
+	text-align: center;
+}
+
+/* footer stuff*/
+.footer ul li{
+	display: inline;
+	padding-left: 2.5%;
+	padding-right: 2.5%;
+	margin: 0;
+	font-size: 20px;
+	font-family: Arial;
+}
+
+.footer{
+	background-color: #cc0000;
+	margin: 0;
+	padding: 0.5%;
+	text-align: center;
+	border-top-right-radius: 30%;
+	border-top-left-radius: 30%;
+	clear: both;
+}
+
+/* link stuff */
+a:link{
+	color: black;
+	text-decoration: none;
+}
+
+a:visited{
+	color: black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: white;
+	text-decoration: none;
+}
+
+.article-link:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.reference-link h2{
+	text-decoration: underline;
+	color: black;
+}
+
+.reference-link:hover{
+	text-decoration: none;
+	color: black;
+}
+
+/*main page*/
+#slide{
+	height: 450px;
+	width: 450px;
+	border-radius: 300px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 1%;
+}
+
+/* article stuff */
+.article{
+	padding: 2.5%;
+	margin-bottom: 10%;
+}
+
+.article-img{
+	float: right;
+	height: 250px;
+	width: 250px;
+	border: 1px;
+	border-radius: 250px;
+}
+
+.article-img2{
+	float: left;
+	height: 250px;
+	width: 250px;
+	border: 1px;
+	border-radius: 250px;
+}
+
+/* recipe page stuff */
+.recipe-img{
+	height: 350px;
+	width: 350px;
+	border-radius: 200px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+iframe{
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 2.5%;
+	height: 315px;
+	width: 560px;
+	border: 0;
+}
+
+/* contact stuff */
+.contact{
+	border: 1px solid;
+	border-color: #cc0000;
+	border-radius: 10px;
+	width: 250px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 2.5%;
+	margin-bottom: 2.5%;
+	text-align: center;
+}
+
+.contact form{
+	padding: 5%;
+}
+
+.textbox{
+	height: 40px;
+	font-size: 15px;
+}
+
+.comment{
+	height: 80px;
+	font-size: 15px;
+}

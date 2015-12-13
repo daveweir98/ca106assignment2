@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> Homepage </title>
+	<link rel = "stylesheet" href = "./CSS/style.css">
+	<meta charset="UTF-8">
+	<script type="text/javascript"> <!-- Adapted from http://www.javascriptkit.com/howto/show2.shtml -->  
+
+	var slideimages = new Array() 
+	slideimages[0] = new Image() 
+	slideimages[0].src = "./graphics/buffalo-wings.jpeg"
+	slideimages[1] = new Image()
+	slideimages[1].src = "./graphics/bourbon-beef-stir-fry.jpg"
+	slideimages[2] = new Image()
+	slideimages[2].src = "./graphics/mojito.jpg"
+	slideimages[3] = new Image()
+	slideimages[3].src = "./graphics/crepes.jpeg"
+	slideimages[4] = new Image()
+	slideimages[4].src = "./graphics/salad.jpeg"
+	slideimages[5] = new Image()
+	slideimages[5].src = "./graphics/turkey-curry.jpg"
+	slideimages[6] = new Image()
+	slideimages[6].src = "./graphics/frenchcake.jpeg"
+	slideimages[7] = new Image()
+	slideimages[7].src = "./graphics/sex-on-the-beach.jpg"
+
+	</script>
+</head>
+<body>
+<div class = "navbar">
+	<nav>
+		<ul>
+			<li>
+				<a href = "./index.html"><img class = "nav-img" src = "./graphics/logo.png" alt = "dinner plate logo"></a>
+			</li>
+			<li>
+				<a href = "./starters/index.html">Starters</a>
+			</li>
+			<li>
+				<a href = "./main-course/index.html">Main Course</a>
+			</li>
+			<li>
+				<a href = "./desserts/index.html">Dessert</a>
+			</li>
+			<li>
+				<a href = "./drinks/index.html">Drinks</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<h1> Meal Selector </h1>
+<h2> Plan your next dinner using our selection of meals! </h2>
+<p> Sick and tired of planning dinners for your events? </p>
+<p> If so, then this website is for you! Browse one of our sections tabs and get started choosing your meal, without the hassle. We will provide you with ingredients, a recipe and information about each meal. We have also included some videos for the drinks menu as they can be tricky to make.</p>
+
+<img src = ".graphics/buffalo-wings.jpeg" id = "slide" alt = "slideeshow image">
+<!-- Adapted from http://www.javascriptkit.com/howto/show2.shtml --> 
+<script type="text/javascript">
+
+var step=0
+
+function slideit(){
+ //if browser does not support the image object, exit.
+ if (!document.images)
+  return
+ document.getElementById('slide').src = slideimages[step].src
+ if (step<7)
+  step++
+ else
+  step=0
+ //call function "slideit()" every 2.5 seconds
+ setTimeout("slideit()",2500)
+}
+
+slideit()
+
+</script>
+
+<div class = "footer">
+	<nav>
+		<ul>
+			<li> 
+				<a href = "./contact/index.html"> Contact </a>
+			</li>
+			<li>
+				<a href = "./references/index.html"> References </a>
+			</li>
+		</ul>
+	</nav>
+</div>
+</body>
+</html>

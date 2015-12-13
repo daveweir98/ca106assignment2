@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<title> Contact Page </title>
+	<link rel = "stylesheet" href = "../CSS/style.css">
+	<meta charset="UTF-8">
+</head>
+<body>
+<div class = "navbar">
+	<nav>
+		<ul>
+			<li>
+				<a href = "../index.html"><img class = "nav-img" src = "../graphics/logo.png" alt = "dinner plate logo"></a>
+			</li>
+			<li>
+				<a href = "../starters/index.html">Starters</a>
+			</li>
+			<li>
+				<a href = "../main-course/index.html">Main Course</a>
+			</li>
+			<li>
+				<a href = "../desserts/index.html">Dessert</a>
+			</li>
+			<li>
+				<a href = "../drinks/index.html">Drinks</a>
+			</li>
+		</ul>
+	</nav>
+</div>
+
+<h1> Contact Form </h1>
+	<p> If you would like to contact us about anything on the site, please fill out the form below. We will take your comments into consideration.</p>
+		<div class = "contact">
+			<form name="Form" onsubmit="return validateForm()" method="post">
+				Name: <br>
+				<input type = "text" name = "name" class = "textbox">
+				<br>
+				E-Mail: <br>
+				<input type = "text" name = "e-mail" class = "textbox">
+				<br>
+				Phone: <br>
+				<input type = "text" name = "phone" class = "textbox">
+				<br>
+				Comments: <br>
+				<input type = "text" name = "comments" class = "comment">
+				<br><br>
+				<input type = "submit" value = "submit">
+			</form>
+		</div>
+	<p> We would like to hear of any difficulties you may have had in navigating our site, or cultural issues to do with our recipe choices </p>
+	<p> Also, we would greatly appreciate any suggestions you may have for future recipes. More vegetarian options, kosher, exclusions of haram ingredients or methods </p>
+<div class = "footer">
+	<nav>
+		<ul>
+			<li> 
+				<a href = "../contact/index.html"> Contact </a>
+			</li>
+			<li>
+				<a href = "../references/index.html"> References </a>
+			</li>
+		</ul>
+	</nav>
+</div>
+<!-- Javascript adapted from that on http://www.w3schools.com/js/js_validation.asp -->
+<script>
+	function validateForm() {
+		var a = document.forms["Form"]["name"].value;
+		if (a == null || a == "") {
+			alert("Please fill out your name.");
+			return false;
+		}
+		var b = document.forms["Form"]["e-mail"].value;
+		if (b == null || b == "") {
+			alert("Please fill out your e-mail.")
+			return false;
+		}
+		var c = document.forms["Form"]["phone"].value;
+		if (c == null || c == "") {
+			alert("Please fill out your phone number")
+			return false;
+		}
+}
+</script>
+</body>
+</html>
